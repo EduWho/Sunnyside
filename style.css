@@ -1,0 +1,327 @@
+/*## Colors
+
+### Primary
+
+- Soft red: hsl(7, 99%, 70%)
+- Yellow: hsl(51, 100%, 49%)
+- Dark desaturated cyan (graphic design text): hsl(167, 40%, 24%)
+- Dark blue (photography text): hsl(198, 62%, 26%)
+- Dark moderate cyan (footer): hsl(168, 34%, 41%)
+
+### Neutral
+
+- Very dark desaturated blue: hsl(212, 27%, 19%)
+- Very dark grayish blue: hsl(213, 9%, 39%)
+- Dark grayish blue: hsl(232, 10%, 55%)
+- Grayish blue: hsl(210, 4%, 67%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+'Barlow', sans-serif;
+'Fraunces', serif;
+### Body Copy
+
+- Font size: 18px*/
+:root{
+    /*Color*/
+    /*Primarys*/
+    --soft-red:hsl(7, 99%, 70%);
+    --yellow:hsl(51, 100%, 49%);
+    --dark-cyan:hsl(167, 40%, 24%);
+    --dark-blue:hsl(198, 62%, 26%);
+    --dark-moderate-cyan:hsl(168, 34%, 41%);
+
+    /*Neutral*/
+    --very-dark-blue:hsl(212, 27%, 19%);
+    --very-dark-grayishBlue:hsl(213, 9%, 39%);
+    --dark-grayishBlue:hsl(232, 10%, 55%);
+    --grayish-blue:hsl(210, 4%, 67%);
+    --white:hsl(0, 0%, 100%);
+
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    font-size: 18px;
+    font-family: 'Barlow', sans-serif;
+}
+
+/*navbar*/
+.navbar-nav{
+    margin-right: 0 !important;
+}
+.navbar{
+    width: 100%;
+    background:transparent;
+    color:var(--white);
+    float: left;
+}
+.nav-item a{
+    color:var(--white) !important;
+}
+.nav-item{
+    transition: 3s ease-in-out ;
+}
+
+.nav-item :hover{
+    background-color: var(--dark-moderate-cyan);
+    border-radius: 2rem;
+}
+
+/*hero section */
+#hero {
+    width:100%;
+    min-height: 90vh;
+    background: url(./images/desktop/image-header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    background-attachment:local;
+    top:0;
+    text-align: center;
+
+  }
+#hero h1 {
+    color:white;
+    font-family:'Fraunces', serif ;
+    font-weight: 900;
+    margin-top: 4rem;
+}
+
+
+/*about section*/
+
+#about-col1 {
+    height: 500px;
+    align-self: center;
+    padding: 130px;
+   
+}
+
+#about-col1 h3{
+    font-family:'Fraunces', serif ;
+    font-weight: 700;
+    
+}
+#about-col1 a{
+    text-decoration: none;
+    color:black
+}
+#about-col1 a:hover{
+    text-decoration: underline 4px solid;
+    text-decoration-color:var(--yellow) ;
+}
+#about-col2 {
+    height: 500px;
+    background: url(./images/desktop/image-transform.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat:no-repeat ;
+    display: block;
+}
+
+/*Services section*/
+#services-col1{
+    height: 500px;
+    background: url(./images/desktop/image-stand-out.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+}
+#services-col2{ 
+    height: 500px;
+    align-self: center;
+    padding: 130px;
+    
+}
+
+#services-col2 h3{
+    font-family:'Fraunces', serif ;
+    font-weight: 900;
+}
+#services-col2 a{
+    text-decoration: solid underline var(--soft-red) 10px opacity 50%;
+    
+    color:black
+}
+#services-col2 a:hover{
+    text-decoration: underline -4px solid;
+    text-decoration-color:var(--soft-red) ;
+}
+
+
+/*products section*/
+#products-col1{
+    height:500px;
+    background: url(./images/desktop/image-graphic-design.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    display: block;
+    text-align: center;
+    padding: 130px;
+}
+#products-col1 h4{
+    margin-top:10rem;
+    font-family:'Fraunces', serif ;
+    font-weight: 900;
+}
+#products-col2{
+    height: 500px;
+    background:url(./images/desktop/image-photography.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    text-align: center;
+    padding: 130px;
+}
+#products-col2 h4{
+     margin-top:10rem;
+     font-family:'Fraunces', serif ;
+     font-weight: 900;
+}
+#products-col2 a{
+    text-decoration: none;
+}
+
+
+
+/*banner section*/
+#banner-col1{
+    background: url(./images/desktop/image-gallery-milkbottles.jpg);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#banner-col2{
+    background: url(./images/desktop/image-gallery-orange.jpg);
+    background-position: center;
+    height: 500px;
+    background-repeat: no-repeat;
+}
+#banner-col3{
+    background: url(./images/desktop/image-gallery-cone.jpg);
+    background-position: center;
+    height: 500px;
+    background-repeat: no-repeat;
+}
+#banner-col4{
+    background: url(./images/desktop/image-gallery-sugarcubes.jpg);
+    background-position: center;
+    height: 500px;
+    background-repeat: no-repeat;
+}
+
+
+/*Clients section*/
+#clients{
+    text-align: center;
+}
+.image-autor{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 3.5rem;
+}
+#clients-row{
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+#clients h5{
+    margin-top:10rem;
+    color: var(--dark-moderate-cyan);
+    font-family:'Fraunces', serif;
+    letter-spacing: .3rem;
+
+}
+
+#clients-col{
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+
+}
+
+.text-autor{
+    margin-bottom: 2rem;
+}
+#clients-col h6{
+    font-family:'Fraunces', serif; 
+    font-weight: 900;
+    font-size: 20px;
+}
+#clients-col p:nth-of-type(2){
+    color:var(--dark-moderate-cyan);
+}
+
+/*Footer*/
+#social-container{
+    background: var(--dark-moderate-cyan);
+    text-align: center;
+
+}
+#social-row{
+    
+    justify-content: center;
+    padding-top:3.5rem ;
+    padding-bottom: 3.5rem;
+}
+#social-col ul{
+display: flex;
+column-gap: 1.5rem;
+justify-content: center;
+margin-top: 3.5rem;
+}
+#social-col ul:nth-of-type(1){
+    column-gap: 3rem;
+}
+#social-col h3{
+    font-family:'Fraunces', serif; 
+    font-weight: 900;
+}
+#social-col li{
+    list-style: none;
+}
+#social-col a{ 
+    color:var(--dark-cyan) ;
+    text-decoration: none;
+    transition: 2s ease-out;
+}
+#social-col a:hover{ 
+    color:#fff ;
+    
+}
+
+
+@media (max-width: 991px) {
+    #about-row {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .navbar-collapse{
+        background-color:#fff ;
+        text-align: center;
+        margin: 1rem 1rem;
+    }
+    .nav-item a{
+        color:var(--dark-moderate-cyan) !important;
+        width: 50%;
+        margin: auto;
+    }
+    .nav-item :hover{
+        background-color: var(--yellow);
+        color: black !important;
+        border-radius: 2rem;
+        
+    }
+    .navbar-toggler{
+       border:  none;
+    }
+   
+    #clients-col{
+        width: 70%;
+    }
+}
